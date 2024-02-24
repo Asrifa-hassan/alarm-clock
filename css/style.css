@@ -1,0 +1,96 @@
+#clockContainer {
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    background: url(../images/clock.png) no-repeat;
+    background-size: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+} 
+#hour {
+    width: 1.8%;
+    height: 16%;
+    top: 34%;
+    left: 48.85%;
+    background: black;
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+ 
+#minute {
+    width: 1.6%;
+    height: 25%;
+    top: 25%;
+    left: 48.9%;
+    background: black;position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+ 
+#second {
+    width: 0.7%;
+    height: 31%;
+    top: 19%;
+    left: 49.60%;
+    background: rgb(252, 3, 3);
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+.setAlarm{
+    width: 70%;
+    height: fit-content;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 30px 50px;
+    
+}
+.alarm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.setAlarm-left input{
+    font-size: 15px;
+    margin-left: 15px;
+    padding: 10px 25px;
+
+}
+#setAlarm-ampm{
+    font-size: 15px;
+    margin-left: 15px;
+    padding: 10px 25px;
+}
+.setAlarm-right button{
+    font-size: 20px;
+    background-color: rgb(17, 107, 196);
+    border: none;
+    margin-left: 15px;
+    border-radius: 50px;
+    padding: 10px 25px;   
+}
+.setAlarm-delete-left{
+    text-align: center;
+    font-size: 25px;
+}
+.setAlarm-list{
+    justify-content: center;
+}
+.parent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.current-time-alarm-right button{
+    background-color: rgb(255, 242, 0);
+    border: none;
+    padding: 5px 5px;
+    color: blue;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 10px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="clockContainer">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+    <div class="setAlarm">
+      <div class="alarm">
+        <div class="setAlarm-left">
+          <input type="number" min="0" max="24" required placeholder="hrs" id="setAlarm-hour">
+          <input type="number" min="0" max="59" required placeholder="min" id="setAlarm-min">
+          <input type="number" min="0" max="59" required placeholder="sec" id="setAlarm-sec">
+          <select id="setAlarm-ampm" >
+            <option value="AM/PM" selected hidden>AM/PM</option>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+        <div class="setAlarm-right">
+          <button onclick="setAlarm()">Set Alarm</button>
+        </div>
+      </div>
+      <div class="setAlarm-delete">
+        <div class="setAlarm-delete-left">
+          <h3 class="alarm-heading">ALARMS</h3>
+        </div>
+       <audio id="alarm-audio">
+       </audio>
+        <div id="setAlarm-list">
+        </div>
+    </div>
+    </div>
+     
+ <script src="js/script.js"></script>    
+</body>
+</html>
